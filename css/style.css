@@ -4,20 +4,20 @@
    VARIABLES
 ───────────────────────────────────────── */
 :root {
-  --or1: #b8882a;
-  --or2: #d4a843;
-  --or3: #f0c866;
-  --fond:    #080b12;
-  --fond2:   #0c1020;
-  --fond3:   #111628;
-  --carte:   #0e1322;
-  --texte:   #eee8d8;
-  --gris:    #5a6080;
-  --gris2:   #8892b0;
-  --bordure: #1a2040;
+  --or1: #a8782a;
+  --or2: #c49535;
+  --or3: #dbb55a;
+  --fond:    #06080f;
+  --fond2:   #090d1a;
+  --fond3:   #0d1224;
+  --carte:   #0b0f1e;
+  --texte:   #f0ead8;
+  --gris:    #4a5270;
+  --gris2:   #7a85a8;
+  --bordure: #161e38;
   --rouge:   #e53e3e;
   --vert:    #38a169;
-  --r: 8px;
+  --r: 3px;
 
   --grad-or: linear-gradient(135deg, var(--or1), var(--or2), var(--or3));
   --grad-or2: linear-gradient(90deg, var(--or1), var(--or3));
@@ -496,10 +496,12 @@ nav.defilé {
   font-size: 22px; font-weight: 700; margin-bottom: 10px;
 }
 .v-specs {
-  display: flex; gap: 14px; flex-wrap: wrap;
+  display: flex; gap: 8px; flex-wrap: wrap;
   font-size: 11px; letter-spacing: 0.5px;
   color: var(--gris2); margin-bottom: 14px;
+  align-items: center;
 }
+.v-sep { color: var(--or1); font-size: 10px; }
 .v-pied {
   display: flex; align-items: center; justify-content: space-between;
   padding-top: 14px;
@@ -593,12 +595,13 @@ nav.defilé {
 .d-prix-note { font-size: 11px; color: rgba(90,96,128,0.6); margin-top: 6px; }
 .grille-specs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .spec {
-  background: var(--fond3); border: 1px solid var(--bordure);
-  border-radius: var(--r); padding: 14px; text-align: center;
+  background: var(--fond3);
+  border: 1px solid var(--bordure);
+  border-left: 2px solid var(--or1);
+  border-radius: var(--r); padding: 14px; text-align: left;
 }
-.spec-i { font-size: 20px; margin-bottom: 6px; }
 .spec-l { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gris); }
-.spec-v { font-size: 13px; font-weight: 500; margin-top: 4px; }
+.spec-v { font-size: 14px; font-weight: 600; margin-top: 6px; }
 .grille-incl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 32px; padding-bottom: 50px; }
 .incl {
   display: flex; align-items: center; gap: 12px;
@@ -749,7 +752,8 @@ footer {
 .f-liens { display: flex; flex-direction: column; gap: 12px; }
 .f-lien { font-size: 14px; color: var(--gris2); cursor: pointer; transition: color 0.3s; font-weight: 300; }
 .f-lien:hover { color: var(--or2); }
-.f-contact { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--gris2); margin-bottom: 12px; font-weight: 300; }
+.f-contact { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--gris2); margin-bottom: 12px; font-weight: 300; }
+.f-ico { color: var(--or2); font-size: 11px; font-weight: 700; min-width: 18px; }
 .f-hors { display: flex; flex-direction: column; gap: 10px; }
 .f-hor { display: flex; justify-content: space-between; font-size: 13px; color: var(--gris2); font-weight: 300; }
 .f-hor span:last-child { color: rgba(238,232,216,0.75); }

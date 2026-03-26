@@ -13,9 +13,11 @@ function carteVoiture(v) {
     '<div class="v-infos">' +
       '<div class="v-nom">' + v.nom + '</div>' +
       '<div class="v-specs">' +
-        '<span>👥 ' + v.places + ' places</span>' +
-        '<span>⚙️ ' + v.transmission + '</span>' +
-        '<span>⛽ ' + v.carburant + '</span>' +
+        '<span>' + v.places + ' places</span>' +
+        '<span class="v-sep">·</span>' +
+        '<span>' + v.transmission + '</span>' +
+        '<span class="v-sep">·</span>' +
+        '<span>' + v.carburant + '</span>' +
       '</div>' +
       '<div class="v-pied">' +
         '<div><span class="v-prix">' + v.prix + '</span> <span class="v-prix-u">MAD/jour</span></div>' +
@@ -58,12 +60,12 @@ function afficherDetail(id) {
         '<p class="d-prix-note">Tarif tout inclus • Aucun frais caché</p>' +
       '</div>' +
       '<div class="grille-specs">' +
-        '<div class="spec"><div class="spec-i">👥</div><div class="spec-l">Places</div><div class="spec-v">' + v.places + ' pers.</div></div>' +
-        '<div class="spec"><div class="spec-i">⚙️</div><div class="spec-l">Transmission</div><div class="spec-v">' + v.transmission + '</div></div>' +
-        '<div class="spec"><div class="spec-i">⛽</div><div class="spec-l">Carburant</div><div class="spec-v">' + v.carburant + '</div></div>' +
-        '<div class="spec"><div class="spec-i">🛡️</div><div class="spec-l">Assurance</div><div class="spec-v">Tous risques</div></div>' +
-        '<div class="spec"><div class="spec-i">📏</div><div class="spec-l">Kilométrage</div><div class="spec-v">Illimité</div></div>' +
-        '<div class="spec"><div class="spec-i">⭐</div><div class="spec-l">Catégorie</div><div class="spec-v">' + v.categorie + '</div></div>' +
+        '<div class="spec"><div class="spec-l">Places</div><div class="spec-v">' + v.places + ' pers.</div></div>' +
+        '<div class="spec"><div class="spec-l">Transmission</div><div class="spec-v">' + v.transmission + '</div></div>' +
+        '<div class="spec"><div class="spec-l">Carburant</div><div class="spec-v">' + v.carburant + '</div></div>' +
+        '<div class="spec"><div class="spec-l">Assurance</div><div class="spec-v">Tous risques</div></div>' +
+        '<div class="spec"><div class="spec-l">Kilométrage</div><div class="spec-v">Illimité</div></div>' +
+        '<div class="spec"><div class="spec-l">Catégorie</div><div class="spec-v">' + v.categorie + '</div></div>' +
       '</div>' +
       (v.disponible ? '<button class="btn btn-or" style="width:100%;justify-content:center;padding:16px" onclick="allerVers(\'reservation\')">Réserver maintenant</button>' : '') +
     '</div>';

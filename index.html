@@ -70,7 +70,10 @@
       <p>Découvrez notre collection de véhicules haut de gamme. Luxe, confort et performance pour chacun de vos trajets.</p>
       <div class="hero-btns">
         <button class="btn btn-or"      onclick="allerVers('flotte')">Explorer la flotte →</button>
-        <button class="btn btn-fantome" onclick="allerVers('reservation')">▶ Réserver</button>
+        <button class="btn btn-fantome" onclick="allerVers('reservation')">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Réserver
+        </button>
       </div>
     </div>
     <div class="hero-scroll">
@@ -88,17 +91,23 @@
       </div>
       <div class="grille-3">
         <div class="carte-av app">
-          <div class="av-icone">🛡️</div>
+          <div class="av-icone">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
           <h3>Assurance Complète</h3>
           <p>Tous nos véhicules sont couverts par une assurance tous risques pour votre totale tranquillité.</p>
         </div>
         <div class="carte-av app" style="transition-delay:.15s">
-          <div class="av-icone">🕐</div>
+          <div class="av-icone">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
           <h3>Service 24/7</h3>
           <p>Notre équipe est disponible à tout moment pour vous assister où que vous soyez au Maroc.</p>
         </div>
         <div class="carte-av app" style="transition-delay:.3s">
-          <div class="av-icone">⭐</div>
+          <div class="av-icone">
+            <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
           <h3>Qualité Premium</h3>
           <p>Une flotte récente et entretenue selon les standards les plus exigeants du secteur.</p>
         </div>
@@ -134,7 +143,7 @@
   <section class="section-cta">
     <div class="container">
       <div class="inner app">
-        <div style="font-size:26px;margin-bottom:14px;opacity:.7">✦</div>
+        
         <h2>Prêt pour une <span class="or">Expérience Premium</span> ?</h2>
         <p>Réservez votre véhicule dès maintenant et profitez d'un service impeccable.</p>
         <button class="btn btn-or" onclick="allerVers('reservation')">Réserver Maintenant</button>
@@ -160,9 +169,9 @@
         </div>
         <div class="f-col app" style="transition-delay:.2s">
           <h4>Contact</h4>
-          <div class="f-contact">📞 +212 6 00 00 00 00</div>
-          <div class="f-contact">✉️ contact@ghazalcar.ma</div>
-          <div class="f-contact">📍 Casablanca, Maroc</div>
+          <div class="f-contact"><span class="f-ico">T.</span> +212 6 00 00 00 00</div>
+          <div class="f-contact"><span class="f-ico">@</span> contact@ghazalcar.ma</div>
+          <div class="f-contact"><span class="f-ico">↗</span> Casablanca, Maroc</div>
         </div>
         <div class="f-col app" style="transition-delay:.3s">
           <h4>Horaires</h4>
@@ -175,7 +184,7 @@
       </div>
       <div class="footer-bas">
         <span class="f-copy">© 2026 Ghazal Car. Tous droits réservés.</span>
-        <span class="f-lien" onclick="allerVers('login')" style="opacity:.35;font-size:12px">⚙ Admin</span>
+        
         <span class="f-maroc">Made in Morocco</span>
       </div>
     </div>
@@ -206,7 +215,7 @@
       <div class="footer-g">
         <div><div class="f-logo">Ghazal Car</div><div class="trait-or" style="margin:0 0 16px 0"></div><p class="f-desc">Votre partenaire de confiance pour la location de véhicules premium au Maroc.</p></div>
         <div class="f-col"><h4>Navigation</h4><div class="f-liens"><span class="f-lien" onclick="allerVers('accueil')">Accueil ↗</span><span class="f-lien" onclick="allerVers('flotte')">Notre Flotte ↗</span><span class="f-lien" onclick="allerVers('reservation')">Réservation ↗</span></div></div>
-        <div class="f-col"><h4>Contact</h4><div class="f-contact">📞 +212 6 00 00 00 00</div><div class="f-contact">✉️ contact@ghazalcar.ma</div><div class="f-contact">📍 Casablanca, Maroc</div></div>
+        <div class="f-col"><h4>Contact</h4><div class="f-contact"><span class="f-ico">T.</span> +212 6 00 00 00 00</div><div class="f-contact"><span class="f-ico">@</span> contact@ghazalcar.ma</div><div class="f-contact"><span class="f-ico">↗</span> Casablanca, Maroc</div></div>
         <div class="f-col"><h4>Horaires</h4><div class="f-hors"><div class="f-hor"><span>Lun - Ven</span><span>08:00 - 20:00</span></div><div class="f-hor"><span>Samedi</span><span>09:00 - 18:00</span></div><div class="f-hor"><span>Dimanche</span><span>10:00 - 16:00</span></div></div></div>
       </div>
       <div class="footer-bas"><span class="f-copy">© 2026 Ghazal Car. Tous droits réservés.</span><span class="f-maroc">Made in Morocco</span></div>
@@ -250,26 +259,26 @@
     <div class="container" style="max-width:640px">
       <div class="form-box">
         <div class="champ">
-          <label>🚗 Véhicule</label>
+          <label>Véhicule</label>
           <select id="res-voiture"><option value="">Choisir un véhicule</option></select>
         </div>
         <div class="grille-2">
           <div class="champ">
-            <label>👤 Nom complet</label>
+            <label>Nom complet</label>
             <input type="text" id="res-nom" placeholder="Votre nom" maxlength="100" />
           </div>
           <div class="champ">
-            <label>📞 Téléphone</label>
+            <label>Téléphone</label>
             <input type="tel" id="res-tel" placeholder="+212 6 00 00 00 00" maxlength="20" />
           </div>
         </div>
         <div class="grille-2">
           <div class="champ">
-            <label>📅 Date de début</label>
+            <label>Date de début</label>
             <input type="date" id="res-debut" />
           </div>
           <div class="champ">
-            <label>📅 Date de fin</label>
+            <label>Date de fin</label>
             <input type="date" id="res-fin" />
           </div>
         </div>
@@ -284,7 +293,7 @@
       <div class="footer-g">
         <div><div class="f-logo">Ghazal Car</div><div class="trait-or" style="margin:0 0 16px 0"></div><p class="f-desc">Votre partenaire de confiance pour la location de véhicules premium au Maroc.</p></div>
         <div class="f-col"><h4>Navigation</h4><div class="f-liens"><span class="f-lien" onclick="allerVers('accueil')">Accueil ↗</span><span class="f-lien" onclick="allerVers('flotte')">Notre Flotte ↗</span><span class="f-lien" onclick="allerVers('reservation')">Réservation ↗</span></div></div>
-        <div class="f-col"><h4>Contact</h4><div class="f-contact">📞 +212 6 00 00 00 00</div><div class="f-contact">✉️ contact@ghazalcar.ma</div><div class="f-contact">📍 Casablanca, Maroc</div></div>
+        <div class="f-col"><h4>Contact</h4><div class="f-contact"><span class="f-ico">T.</span> +212 6 00 00 00 00</div><div class="f-contact"><span class="f-ico">@</span> contact@ghazalcar.ma</div><div class="f-contact"><span class="f-ico">↗</span> Casablanca, Maroc</div></div>
         <div class="f-col"><h4>Horaires</h4><div class="f-hors"><div class="f-hor"><span>Lun - Ven</span><span>08:00 - 20:00</span></div><div class="f-hor"><span>Samedi</span><span>09:00 - 18:00</span></div><div class="f-hor"><span>Dimanche</span><span>10:00 - 16:00</span></div></div></div>
       </div>
       <div class="footer-bas"><span class="f-copy">© 2026 Ghazal Car. Tous droits réservés.</span><span class="f-maroc">Made in Morocco</span></div>
@@ -300,26 +309,23 @@
   <div class="fond-login">
     <div class="carte-login">
       <div class="login-entete">
-        <div class="login-ico">🛡️</div>
+        
         <span class="tag">Espace administrateur</span>
         <h1>Connexion</h1>
         <div class="trait-or"></div>
       </div>
       <div class="form-box">
         <div class="champ">
-          <label>✉️ Email</label>
-          <input type="email" id="login-email" placeholder="admin@ghazalcar.com" />
+          <label>Email</label>
+          <input type="email" id="login-email" placeholder="Votre email" />
         </div>
         <div class="champ" style="margin-bottom:26px">
-          <label>🔒 Mot de passe</label>
+          <label>Mot de passe</label>
           <input type="password" id="login-mdp" placeholder="••••••••" />
         </div>
         <button class="btn btn-or" style="width:100%;justify-content:center;padding:15px" onclick="seConnecter()">
           Se connecter
         </button>
-        <p style="font-size:12px;color:var(--gris2);text-align:center;margin-top:16px">
-          Démo : admin@ghazalcar.com / admin123
-        </p>
       </div>
     </div>
   </div>
@@ -340,8 +346,8 @@
   <section style="padding:40px 0">
     <div class="container" style="max-width:860px">
       <div class="onglets">
-        <button class="btn-ong actif" onclick="changerOnglet('voitures')">🚗 Véhicules</button>
-        <button class="btn-ong"       onclick="changerOnglet('reservations')">📅 Réservations</button>
+        <button class="btn-ong actif" onclick="changerOnglet('voitures')"> Véhicules</button>
+        <button class="btn-ong"       onclick="changerOnglet('reservations')"> Réservations</button>
       </div>
 
       <div class="tab actif" id="tab-voitures">

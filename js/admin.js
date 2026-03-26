@@ -20,7 +20,7 @@ function afficherListeAdmin() {
         '<span class="' + (v.disponible ? 'vert-p' : 'rouge-p') + '">' + (v.disponible ? 'Disponible' : 'Indisponible') + '</span>' +
       '</div></div>' +
       '<div class="admin-actions">' +
-        '<button class="btn-tog" onclick="changerDispo(\'' + v.id + '\')">' + (v.disponible ? '🟢' : '🔴') + '</button>' +
+        '<button class="btn-tog" onclick="changerDispo(\'' + v.id + '\')">' + (v.disponible ? '●' : '○') + '</button>' +
         '<button class="btn-sup" onclick="supprimerVoiture(\'' + v.id + '\')">🗑️</button>' +
       '</div></div>';
   }).join('');
